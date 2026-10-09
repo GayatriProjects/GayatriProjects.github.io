@@ -1,220 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gayatri Gawas | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Vancy-Style Clean Vector Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancy Agnes Fernandes | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Vancy Agnes Fernandes — Full-Stack Developer skilled in React, Python, Flask, and modern web technologies. Explore projects, experience, and skills.">
+  <meta name="keywords" content="Vancy Fernandes, Full-Stack Developer, React, Python, Flask, Portfolio">
+  <meta name="author" content="Vancy Agnes Fernandes">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- STICKY HEADER NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <div class="logo-box">GG</div>
-                <span class="logo-text">Gayatri Gawas</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Background Effects -->
+<div class="bg-grid"></div>
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
 
-    <!-- HERO INTRODUCTION COMPONENT -->
-    <section id="about" class="hero-section">
-        <div class="hero-container">
-            <div class="status-pill">
-                <span class="pulse-dot"></span>
-                <span>Open for Engineering Internships</span>
-            </div>
-            <h1 class="hero-title">Building Intelligent <br><span class="gradient-text">Full-Stack Solutions</span></h1>
-            <p class="hero-subtitle">I'm a BE-Information Technology student at SRIIT Goa with a 9.5 CGPA, specializing in engineering high-performance web systems and applied machine learning frameworks.</p>
-            
-            <div class="cta-group">
-                <a href="https://github.com" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-github"></i> GitHub Profile
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
-                <a href="mailto:gayatrigawas8@gmail.com" class="btn btn-outline">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-            </div>
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">VF.</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span> Open to Opportunities
         </div>
-    </section>
-
-    <!-- CORE SKILLS CAPABILITY MATRIX -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-heading">Core Competencies</h2>
-            <p class="section-subheading">Technical languages, frameworks, and infrastructure tools I work with daily.</p>
-            
-            <div class="skills-wrapper">
-                <div class="skill-card">
-                    <div class="skill-icon-header">
-                        <i class="fas fa-code text-blue"></i>
-                        <h3>Languages</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span>C</span><span>C++</span><span>Python</span><span>JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon-header">
-                        <i class="fas fa-layer-group text-indigo"></i>
-                        <h3>Web Stack & Infra</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span>Django</span><span>Frontend (HTML/CSS/JS)</span><span>Git</span><span>GitHub</span><span>Docker (Basics)</span><span>Linux</span><span>VS Code</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon-header">
-                        <i class="fas fa-database text-cyan"></i>
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span>SQL</span><span>MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon-header">
-                        <i class="fas fa-brain text-purple"></i>
-                        <h3>Data Intelligence</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span>Machine Learning Basics</span><span>Data Preprocessing</span><span>Model Training</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span>
-                    </div>
-                </div>
-            </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Vancy Agnes<br><span class="gradient-text">Fernandes</span></h1>
+        <p class="hero-title"><span id="typing-text">Full-Stack Developer</span><span style="color:var(--accent-1);animation:pulse 1s infinite">|</span></p>
+        <p class="hero-desc">Driven IT student building end-to-end applications with React, Python, and Flask. Passionate about creating impactful solutions through clean code and modern technologies.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
         </div>
-    </section>
-
-    <!-- FEATURED ENGINEERING PROJECTS GRID -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-heading">Featured Projects</h2>
-            <p class="section-subheading">Production applications solving real-world infrastructure and machine learning problems.</p>
-            
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Smart Public Transport Web Platform</h3>
-                        <i class="fas fa-arrow-up-right-from-square card-link-icon"></i>
-                    </div>
-                    <p class="project-desc">Full-stack web solution for sustainable transport in Goa featuring real-time vehicle tracking, journey planning, and QR-based ticketing operations.</p>
-                    <div class="project-milestone">
-                        <span class="milestone-label">Architecture:</span> Implemented REST APIs, database integration, and eco-impact metrics calculation models.
-                    </div>
-                    <div class="project-tags">
-                        <span>Django</span><span>REST API</span><span>SQL</span><span>JavaScript</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI-Based Financial Fraud Detection Platform</h3>
-                        <i class="fas fa-arrow-up-right-from-square card-link-icon"></i>
-                    </div>
-                    <p class="project-desc">Intelligent system using Django and Machine Learning to track, detect, and isolate fraudulent financial transactions safely in real time.</p>
-                    <div class="project-milestone">
-                        <span class="milestone-label">Architecture:</span> Leveraged Pandas, NumPy, and MySQL arrays for data preprocessing and secure monitoring systems.
-                    </div>
-                    <div class="project-tags">
-                        <span>Django</span><span>Machine Learning</span><span>Pandas</span><span>MySQL</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Women Safety & Emergency Response App</h3>
-                        <i class="fas fa-arrow-up-right-from-square card-link-icon"></i>
-                    </div>
-                    <p class="project-desc">Real-time safety web application enabling immediate SOS alerts, live GPS tracking updates, and swift situational broadcast matrices.</p>
-                    <div class="project-milestone">
-                        <span class="milestone-label">Architecture:</span> Handled custom API-based communication services layered on core JavaScript UI interfaces.
-                    </div>
-                    <div class="project-tags">
-                        <span>Django</span><span>JavaScript</span><span>SOS APIs</span><span>Live Tracking</span>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Real-Time Weather Tracker</h3>
-                        <i class="fas fa-arrow-up-right-from-square card-link-icon"></i>
-                    </div>
-                    <p class="project-desc">Responsive forecasting client interface connected to meteorological arrays to render live climate forecasts based on device coordinates.</p>
-                    <div class="project-milestone">
-                        <span class="milestone-label">Architecture:</span> Integrated OpenWeatherMap API engines to map real-time meteorological JSON datasets dynamically.
-                    </div>
-                    <div class="project-tags">
-                        <span>Frontend Web</span><span>API Fetch</span><span>JSON Parsing</span>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="3" data-suffix="+">0</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="6" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="6" data-suffix="+">0</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-glow"></div>
+          <div class="hero-avatar-ring"></div>
+          <img src="assets/images/profile-avatar.jpg" alt="Vancy Agnes Fernandes" class="hero-avatar">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- EDUCATION TIMELINE & CERTIFICATIONS SECTION -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <div class="split-layout">
-                <!-- Education Timeline Column -->
-                <div class="split-col">
-                    <h2 class="section-heading"><i class="fas fa-graduation-cap header-icon"></i> Education</h2>
-                    <div class="vancy-timeline">
-                        <div class="timeline-node">
-                            <span class="node-time">Current Student</span>
-                            <h3>BE - Information Technology (CGPA: 9.5)</h3>
-                            <p>Shree Rayeshwar Institute of Information Technology</p>
-                        </div>
-                        <div class="timeline-node">
-                            <span class="node-time">Passed 2023</span>
-                            <h3>HSSC (Class XII)</h3>
-                            <p>Kendriya Vidyalaya Ponda Goa</p>
-                        </div>
-                        <div class="timeline-node">
-                            <span class="node-time">Passed 2021</span>
-                            <h3>SSC (Class X)</h3>
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// About Me</span>
+      <h2 class="section-title">Crafting Digital Experiences</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>B.E. Information Technology</strong> student at Shree Rayeshwar Institute of Engineering, Goa, with a strong passion for full-stack development and emerging technologies.</p>
+        <p>With hands-on experience across <strong>3 internships</strong> and multiple impactful projects, I specialize in building end-to-end applications using React.js, Python, and Flask. I thrive in fast-paced environments, having participated in numerous hackathons and tech events.</p>
+        <p>As a <strong>HackerRank Campus Ambassador</strong> and former Vice President of the ELITE IT Department, I combine technical skills with leadership and community building.</p>
+      </div>
+      <div class="about-highlights reveal">
+        <div class="highlight-card">
+          <div class="highlight-icon">💻</div>
+          <div class="highlight-title">Full-Stack Dev</div>
+          <div class="highlight-desc">React, Flask, Node.js & modern frameworks</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🤖</div>
+          <div class="highlight-title">AI / ML</div>
+          <div class="highlight-desc">Deep Learning, Computer Vision, NLP</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🚀</div>
+          <div class="highlight-title">Hackathons</div>
+          <div class="highlight-desc">6+ hackathons including IIT Goa & NIT Goa</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">👥</div>
+          <div class="highlight-title">Leadership</div>
+          <div class="highlight-desc">HackerRank Ambassador, VP ELITE Club</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Kendriya Vidyalaya Ponda Goa
+<!-- ========== EXPERIENCE ========== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Experience</span>
+      <h2 class="section-title">Professional Journey</h2>
+      <p class="section-desc">Building real-world products through internships and collaborative work.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Nov 2025 — Present</div>
+          <div class="timeline-role">Intern</div>
+          <div class="timeline-company">Fluxatic Global</div>
+          <div class="timeline-location">📍 Porvorim, Goa (Hybrid)</div>
+          <ul class="timeline-points">
+            <li>Built a personal brand and contributed to <strong>Becoming League</strong>, a community of growth-focused builders</li>
+            <li>Developed websites using <strong>Local WP</strong> and <strong>Wix Studio</strong></li>
+            <li>Created brand assets and a brand book using <strong>Adobe Express</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Jul 2025 — Sep 2025</div>
+          <div class="timeline-role">Technical Intern</div>
+          <div class="timeline-company">BridgeAura | Fluxatic Global</div>
+          <div class="timeline-location">📍 Porvorim, Goa (Remote)</div>
+          <ul class="timeline-points">
+            <li>Built <strong>Near2Door</strong>, a full-stack hyperlocal e-commerce platform using React (Vite) and Flask</li>
+            <li>Implemented role-based authentication and order/product management</li>
+            <li>Explored freelancing, content creation, and personal branding</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Jul 2025 — Sep 2025</div>
+          <div class="timeline-role">Software Engineering Intern</div>
+          <div class="timeline-company">Persistent Systems Ltd</div>
+          <div class="timeline-location">📍 Verna, Goa (Hybrid)</div>
+          <ul class="timeline-points">
+            <li>Built <strong>Moodify</strong>, an emotion-based song recommendation system with a team of 5</li>
+            <li>Used React.js, Flask, Bootstrap, Tailwind CSS, and MongoDB for the full-stack app</li>
+            <li>Live at: <a href="https://moodify-murex.vercel.app/" target="_blank" style="color:var(--accent-2)">moodify-murex.vercel.app</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ========== PROJECTS ========== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Projects</span>
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-desc">A selection of projects that showcase my problem-solving skills and technical range.</p>
+    </div>
+    <div class="projects-grid">
 
-Certifications & Labs
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/images/project-medical.png" alt="Heart Attack Risk Prediction">
+          <div class="project-overlay"></div>
+          <div class="project-tags">
+            <span class="project-tag">Deep Learning</span>
+            <span class="project-tag">Medical AI</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Heart Attack Risk Prediction</h3>
+          <p class="project-desc">Final year B.E. project using retinal eye images. Built a deep learning pipeline with U-Net segmentation and EfficientNet classification. Presented at National MedTech Hackathon (Napcam).</p>
+          <div class="project-links">
+            <span class="project-link"><i class="fas fa-brain"></i> U-Net · EfficientNet</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/images/project-ecommerce.png" alt="Near2Door E-commerce">
+          <div class="project-overlay"></div>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Flask</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Near2Door — Hyperlocal E-commerce</h3>
+          <p class="project-desc">Full-stack platform for vendors, customers, and delivery agents. Features role-based auth, product management, and order tracking built with React (Vite) and Python Flask.</p>
+          <div class="project-links">
+            <a href="https://github.com/vancyferns" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/images/project-moodify.png" alt="Moodify">
+          <div class="project-overlay"></div>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Moodify — Music by Mood</h3>
+          <p class="project-desc">Emotion-based song recommendation system built at Persistent Systems. Analyzes mood to curate personalized playlists using React.js, Flask, and MongoDB.</p>
+          <div class="project-links">
+            <a href="https://moodify-murex.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
 
-Python Programming Structural Systems
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/images/project-learning.png" alt="Consistency Lab">
+          <div class="project-overlay"></div>
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">AI</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Consistency Lab — Learn Smarter</h3>
+          <p class="project-desc">AI-powered learning platform that transforms YouTube playlists and documents into gamified experiences. Features XP system, streak tracking, scheduling, and progress analytics.</p>
+          <div class="project-links">
+            <a href="https://github.com/vancyferns" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="project-card reveal">
+        <div class="project-image">
+          <img src="assets/images/project-seniorsafe.png" alt="SeniorSafe">
+          <div class="project-overlay"></div>
+          <div class="project-tags">
+            <span class="project-tag">Gamification</span>
+            <span class="project-tag">AI</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">SeniorSafe — Digital Payments</h3>
+          <p class="project-desc">Gamified digital payment learning platform for senior citizens. Features UPI simulation, QR scanning, scam detection, and multi-language support for safe financial literacy.</p>
+          <div class="project-links">
+            <a href="https://github.com/vancyferns" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
 
-Foundations of Artificial Intelligence & Machine Learning Frameworks
+<!-- ========== SKILLS ========== -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Skills</span>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <p class="section-desc">Technologies and tools I work with to bring ideas to life.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">⌨️</div>
+        <div class="skill-cat-title">Languages</div>
+        <div class="skill-items">
+          <span class="skill-pill">C</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">⚛️</div>
+        <div class="skill-cat-title">Frameworks & Libraries</div>
+        <div class="skill-items">
+          <span class="skill-pill">React.js</span>
+          <span class="skill-pill">Next.js</span>
+          <span class="skill-pill">Flask</span>
+          <span class="skill-pill">Vite</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🗄️</div>
+        <div class="skill-cat-title">Databases</div>
+        <div class="skill-items">
+          <span class="skill-pill">MongoDB</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">Supabase</span>
+          <span class="skill-pill">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🛠️</div>
+        <div class="skill-cat-title">Tools & Technologies</div>
+        <div class="skill-items">
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Google Colab</span>
+          <span class="skill-pill">Argo UML</span>
+          <span class="skill-pill">Google Antigravity</span>
+          <span class="skill-pill">Vercel</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🌟</div>
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-items">
+          <span class="skill-pill">Leadership</span>
+          <span class="skill-pill">Team Management</span>
+          <span class="skill-pill">Public Speaking</span>
+          <span class="skill-pill">Communication</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Languages Spoken</div>
+        <div class="skill-items">
+          <span class="skill-pill">English</span>
+          <span class="skill-pill">Hindi</span>
+          <span class="skill-pill">Konkani</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ========== EDUCATION ========== -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Education</span>
+      <h2 class="section-title">Academic Background</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">B.E. Information Technology</div>
+          <div class="edu-school">Shree Rayeshwar Institute of Engineering & IT — Shiroda, Goa</div>
+          <div class="edu-year">Expected 08/2026</div>
+        </div>
+        <div class="edu-score">CGPA: 8.53</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">📚</div>
+        <div>
+          <div class="edu-degree">Higher Secondary — PCM (Computer Science)</div>
+          <div class="edu-school">Damodar Higher Secondary School of Science — Margao, Goa</div>
+          <div class="edu-year">04/2022</div>
+        </div>
+        <div class="edu-score">79.83%</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">🏫</div>
+        <div>
+          <div class="edu-degree">High School</div>
+          <div class="edu-school">Presentation Convent High School — Fatorda, Goa</div>
+          <div class="edu-year">05/2020</div>
+        </div>
+        <div class="edu-score">85%</div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ========== ACHIEVEMENTS ========== -->
+<section class="section" id="achievements">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Achievements & Activities</span>
+      <h2 class="section-title">Beyond the Code</h2>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-text"><strong>Tech Spectra</strong> — 1st Place in Technical Presentation</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">☁️</div>
+        <div class="achievement-text"><strong>Google Cloud Arcade</strong> — Completed Facilitator Program 2024</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">💡</div>
+        <div class="achievement-text"><strong>HackerRank Campus Ambassador</strong> — Dec 2025 – Present</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">👔</div>
+        <div class="achievement-text"><strong>Vice President</strong> — ELITE (IT Department), 2024-25</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🎯</div>
+        <div class="achievement-text"><strong>Lenovo Leap Hackathon 2026</strong> — Participant</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🔥</div>
+        <div class="achievement-text"><strong>Aspire x Cayu Hackathon 2026</strong> — Participant</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">💻</div>
+        <div class="achievement-text"><strong>IIT Goa Cultrang</strong> — Snapcode Showdown Participant</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🛡️</div>
+        <div class="achievement-text"><strong>Goa Police Hackathon 2024</strong> — Selected Participant</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🧠</div>
+        <div class="achievement-text"><strong>AI Workshop</strong> — by Adam Paulisick, 2026</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">📜</div>
+        <div class="achievement-text"><strong>16-Week Fullstack Course</strong> — Next.js + GenAI (Internspirit, ongoing)</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🎓</div>
+        <div class="achievement-text"><strong>University Class Rep</strong> — TE, 2024-25</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">📖</div>
+        <div class="achievement-text">Passionate about <strong>self-growth books & startups</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Cursor AI Engineering Application Workshop
+<!-- ========== CONTACT ========== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-desc">Have a project idea, collaboration opportunity, or just want to say hello? I'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-info-text">I'm currently open to internship and entry-level full-stack development opportunities. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:vanferns2004@gmail.com" class="contact-link-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">vanferns2004@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+919359438631" class="contact-link-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+91 9359438631</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/vancy-agnes-fernandes-3b6215278/" target="_blank" class="contact-link-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Vancy Agnes Fernandes</div>
+            </div>
+          </a>
+          <a href="https://github.com/vancyferns" target="_blank" class="contact-link-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">vancyferns</div>
+            </div>
+          </a>
+          <div class="contact-link-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Sao Jose de Areal, Goa 403709</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" class="form-input" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Your Email</label>
+            <input type="email" class="form-input" id="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" class="form-input" id="subject" placeholder="Project Collaboration">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p class="footer-text">© 2026 Vancy Agnes Fernandes. Crafted with ❤️</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/vancy-agnes-fernandes-3b6215278/" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/vancyferns" target="_blank" class="footer-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:vanferns2004@gmail.com" class="footer-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
 
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
 
-Umbraco Open CMS Developer Framework Deep-Dive
-
-
-
-
-
-© 2026 Gayatri Gawas. Inspired by Vancy Design Framework. Hosted via GitHub Pages.
+<script src="script.js"></script>
+</body>
+</html>
