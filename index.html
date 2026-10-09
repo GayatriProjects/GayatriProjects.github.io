@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gayatri Gawas | Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
-  <!-- FontAwesome Icons for clean structural navigation graphics -->
+  <!-- Fixed CSS baseline link root path formatting -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Restored full FontAwesome content distribution delivery link array for icons -->
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
@@ -70,13 +71,12 @@
         </div>
       </div>
 
-<div class="hero-visual">
-  <div class="hero-avatar-wrapper" style="display: flex; align-items: center; justify-content: center; width: 340px; height: 340px; background: rgba(255,255,255,0.02); border-radius: 50%; border: 1px solid rgba(108,99,255,0.15); box-shadow: var(--shadow-glow);">
-    <i class="fas fa-laptop-code" style="font-size: 5rem; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-    <div class="hero-avatar-glow"></div>
-  </div>
-</div>
-
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper" style="display: flex; align-items: center; justify-content: center; width: 340px; height: 340px; background: rgba(255,255,255,0.02); border-radius: 50%; border: 1px solid rgba(108,99,255,0.15); box-shadow: var(--shadow-glow);">
+          <i class="fas fa-laptop-code" style="font-size: 5rem; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+          <div class="hero-avatar-glow"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -201,11 +201,6 @@
             <div class="project-links">
               <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> Repository</a>
             </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
 
 Frontend Web
 OpenWeather API
@@ -288,7 +283,7 @@ Completed: 2021
 Completed
 
 // Credentials
-Certifications & Achivements
+Certifications & Achievements
 
 
 
@@ -347,7 +342,6 @@ Transmit Message
 
 
 
-// Navbar Scroll Dynamic Visual State
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
 if (window.scrollY > 20) {
@@ -356,14 +350,12 @@ navbar.classList.add('scrolled');
 navbar.classList.remove('scrolled');
 }
 });
-// Mobile Navigation Sliding Toggle Matrix
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 hamburger.addEventListener('click', () => {
 hamburger.classList.toggle('active');
 navLinks.classList.toggle('open');
 });
-// Dynamic Viewport Reveal Logic
 const revealElements = document.querySelectorAll('.reveal');
 const revealOnScroll = () => {
 revealElements.forEach(el => {
@@ -376,4 +368,9 @@ el.classList.add('active');
 });
 };
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Execution baseline trigger
+revealOnScroll();
+
+
+
+
+
