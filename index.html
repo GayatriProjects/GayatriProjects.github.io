@@ -57,8 +57,8 @@
     img { max-width: 100%; display: block; }
 
     /* ========== UTILITIES ========== */
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .section { padding: 100px 0; position: relative; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .section { padding: 100px 0; position: relative; z-index: 1; }
     .section-label {
       font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 3px;
       background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 12px; display: inline-block;
@@ -135,8 +135,8 @@
     .timeline-date { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-2); font-weight: 500; margin-bottom: 4px; }
     .timeline-role { font-size: 1.15rem; font-weight: 700; margin-bottom: 2px; }
     .timeline-company { font-size: 0.9rem; color: var(--accent-1); margin-bottom: 4px; font-weight: 500; }
-    .timeline-location { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; }
 
+.timeline-location { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; }
 .timeline-points li { position: relative; padding-left: 16px; margin-bottom: 6px; font-size: 0.88rem; color: var(--text-secondary); }
 .timeline-points li::before { content: '▹'; position: absolute; left: 0; color: var(--accent-1); }
 /* ========== PROJECTS GRID ========== */
@@ -190,7 +190,7 @@
 .form-input, .form-textarea { width: 100%; padding: 14px 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-primary); font-size: 0.9rem; outline: none; }
 .form-textarea { resize: vertical; min-height: 120px; }
 .form-submit { width: 100%; justify-content: center; }
-footer { padding: 40px 0; border-top: 1px solid var(--border-glass); margin-top: 4rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
+footer { padding: 40px 0; border-top: 1px solid var(--border-glass); mt: 4rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
 .footer-content { display: flex; justify-content: space-between; align-items: center; }
 /* ========== RESPONSIVE OVERRIDES ========== */
 @media (max-width: 968px) {
@@ -489,11 +489,4 @@ el.classList.add('active');
 };
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
-
-
-
-<FollowUp>
-Go ahead and save this into your **`index.html`** repository file now. Once it's committed, open a fresh **Incognito window** to bypass old data, and reload **`https://github.io`** to see everything perfectly aligned!
-</FollowUp>
-
 
