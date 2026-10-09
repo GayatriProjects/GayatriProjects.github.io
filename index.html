@@ -67,7 +67,7 @@
     .section-desc { color: var(--text-secondary); font-size: 1.05rem; max-width: 600px; margin-bottom: 48px; }
     .section-header { margin-bottom: 60px; }
 
-    /* ========== BACKGROUND GRAPHICS ========== */
+    /* ========== ANIMATED BACKGROUND ========== */
     .bg-grid {
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
       background-image: linear-gradient(rgba(108,99,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(108,99,255,0.03) 1px, transparent 1px);
@@ -78,7 +78,7 @@
     .bg-orb-2 { width: 500px; height: 500px; background: var(--accent-2); bottom: -150px; left: -150px; }
     .bg-orb-3 { width: 400px; height: 400px; background: var(--accent-3); top: 50%; left: 50%; transform: translate(-50%,-50%); }
 
-    /* ========== FIXED NAVBAR ========== */
+    /* ========== NAVBAR ========== */
     .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; transition: var(--transition); }
     .navbar.scrolled { background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-glass); padding: 12px 0; }
     .navbar .container { display: flex; align-items: center; justify-content: space-between; }
@@ -90,7 +90,7 @@
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
     .nav-cta { padding: 8px 20px !important; border-radius: var(--radius-sm); background: var(--gradient-1) !important; color: #fff !important; font-weight: 600 !important; }
 
-    /* ========== HERO SECTION ========== */
+    /* ========== HERO LAYOUT ========== */
     .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 80px; position: relative; z-index: 1; }
     .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; width: 100%; }
     .hero-text-block { display: flex; flex-direction: column; align-items: flex-start; }
@@ -140,7 +140,7 @@
 .timeline-points li { position: relative; padding-left: 16px; margin-bottom: 6px; font-size: 0.88rem; color: var(--text-secondary); }
 .timeline-points li::before { content: '▹'; position: absolute; left: 0; color: var(--accent-1); }
 /* ========== PROJECTS GRID ========== */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; width: 100%; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; width: 100%; }
 .project-card { border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-glass); border: 1px solid var(--border-glass); transition: var(--transition); position: relative; width: 100%; }
 .project-card:hover { transform: translateY(-8px); border-color: rgba(108,99,255,0.3); box-shadow: var(--shadow-glow); }
 .project-image { position: relative; height: 220px; overflow: hidden; }
@@ -489,4 +489,11 @@ el.classList.add('active');
 };
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
+
+
+
+<FollowUp>
+Go ahead and save this into your **`index.html`** repository file now. Once it's committed, open a fresh **Incognito window** to bypass old data, and reload **`https://github.io`** to see everything perfectly aligned!
+</FollowUp>
+
 
